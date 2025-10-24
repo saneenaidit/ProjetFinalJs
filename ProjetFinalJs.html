@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie Interactive Accessible</title>
+  <link rel="stylesheet" href="styleFinalJs.css">
+</head>
+<body>
+  <h1>Galerie Interactive Accessible</h1>
+  <h2>Survolez ou naviguez avec le clavier pour voir l'image</h2>
+
+  <!-- Div principale pour afficher le texte et le fond -->
+  <div id="image">
+    Hover over an image below to display here
+  </div>
+
+  <!-- Galerie d'images -->
+  <div class="gallery">
+    <img src="img1.jpg" alt="Paysage de montagne" onmouseover="upDate(this)" onmouseout="unDo()">
+    <img src="img2.jpg" alt="Plage au coucher du soleil" onmouseover="upDate(this)" onmouseout="unDo()">
+    <img src="img3.jpg" alt="Forêt tropicale" onmouseover="upDate(this)" onmouseout="unDo()">
+    <img src="img4.jpg" alt="Ville de nuit" onmouseover="upDate(this)" onmouseout="unDo()">
+    <img src="img5.jpg" alt="Fleurs colorées" onmouseover="upDate(this)" onmouseout="unDo()">
+    <img src="img6.jpg" alt="Champs verts" onmouseover="upDate(this)" onmouseout="unDo()">
+  </div>
+
+  <script src="scriptFinal.js"></script>
+</body>
+</html>

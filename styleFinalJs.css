@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+#image {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto 20px auto;
+  line-height: 400px;
+  color: white;
+  font-size: 24px;
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
+}
+
+.gallery img {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid #333;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.gallery img:hover,
+.gallery img:focus {
+  transform: scale(1.1);
+  border-color: #f00;
+  outline: none; /* enlever le contour par défaut */
+}
+
